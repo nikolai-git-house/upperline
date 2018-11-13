@@ -1,0 +1,169 @@
+.BusinessHeroForm {
+  background: white;
+  line-height: 1.2rem;
+  /*width: 760px;*/
+  width: 78%;
+  height: fit-content;
+  position: relative;
+  left: 11%;
+  top: -600px;
+  padding: 50px 6%;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -520px;
+}
+@media (max-width: 1280px) {
+  .BusinessHeroForm {
+    top: -500px;
+    margin-bottom: -420px;
+  }
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm {
+    grid-template-columns: 1fr;
+    top: -300px;
+    margin-bottom: -220px;
+  }
+}
+.BusinessHeroForm .little-red-thing {
+  position: absolute;
+  left: 7.5%;
+}
+.BusinessHeroForm-text {
+  /*border: solid 1px black;*/
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm-text {
+    /*border: solid 1px black;*/
+    grid-column-start: auto;
+    grid-row-start: auto;
+    margin-bottom: 20px;
+  }
+}
+.BusinessHeroForm-text p {
+  padding-right: 15%;
+  font-family: Montserrat;
+  margin-top: 20px;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm-text p {
+    padding-right: 0;
+  }
+}
+.BusinessHeroForm-form {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: grid;
+  /*grid-gap: 2%;*/
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 13% 13% 13% 39%;
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm-form {
+    grid-column-start: auto;
+    grid-row-start: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.BusinessHeroForm-form .big_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BusinessHeroForm-form textarea {
+  grid-column: span 2;
+  padding: 3%;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm-form textarea {
+    margin: 5px 0;
+  }
+}
+.BusinessHeroForm-form input {
+  grid-column: span 2;
+  padding: 3%;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm-form input {
+    margin: 5px 0;
+  }
+}
+.BusinessHeroForm-form .half {
+  grid-column: span 1;
+  padding: 6%;
+}
+@media (max-width: 768px) {
+  .BusinessHeroForm-form .half {
+    padding: 3%;
+  }
+}
+.BusinessHeroForm-form .button_box {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  min-height: 40px;
+  min-width: 150px;
+  padding: 0;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.BusinessHeroForm-form .button_box .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  min-height: 40px;
+  max-height: 50px;
+  min-width: 150px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  padding: 0;
+}
+
+.BusinessHeroForm-text div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.BusinessHeroForm-text div img {
+  width: 35%;
+}
+#google_logo {
+  width: 30%;
+  /*margin-left: -55%;*/
+  /*margin-top: -2%;*/
+  margin-right: 5%;
+}
+
+.BusinessHeroForm h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*@media screen only (min-width: 400 & max-width: 700) {
+  .BusinessHeroForm {
+    width: 100px;
+  }
+}
+
+@media screen only (min-width: 700 & max-width: 900) {
+
+}*/

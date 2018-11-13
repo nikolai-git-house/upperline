@@ -1,0 +1,178 @@
+.OurClasses {
+  height: auto;
+}
+
+.OurClasses .OurClasses_content {
+  height: auto;
+}
+.OurClasses .option-content-holder {
+}
+.OurClasses .OurClasses_content {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  width: 84%;
+  position: relative;
+  background: white;
+  top: -100px;
+  left: 8%;
+  padding-top: -50px;
+}
+@media (max-width: 978px) {
+  .OurClasses .OurClasses_content {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    position: relative;
+    background: white;
+    top: -50px;
+    left: 8%;
+    padding-top: -50px;
+  }
+}
+.OurClasses .OurClasses_left {
+  padding-left: 30%;
+  padding-top: 40px;
+  height: 100%;
+}
+@media (max-width: 978px) {
+  .OurClasses .OurClasses_left {
+    padding-left: 9%;
+  }
+}
+.OurClasses .OurClasses_right {
+  height: 100%;
+  padding: 50px 8% 0 5%;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right {
+    padding-right: 5%;
+  }
+}
+.OurClasses .OurClasses_right .option-holder {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right .option-holder {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.OurClasses .OurClasses_right .option {
+  display: grid;
+  grid-template-rows: 0.2fr 0.5fr 1fr 0.5fr;
+}
+
+.OurClasses .OurClasses_right .option:not(:first-child) {
+  padding-left: 5%;
+}
+
+.OurClasses .OurClasses_right .option:not(:last-child) {
+  padding-right: 5%;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right .option:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.OurClasses .OurClasses_right .option:not(:first-child) {
+  border-left: solid 1px rgba(242, 242, 242, 1);
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right .option:not(:first-child) {
+    padding-left: 0;
+    border-left: none;
+  }
+}
+.OurClasses .OurClasses_right p.muted_text {
+  margin-top: 0;
+  font-family: Arvo;
+  color: rgba(180, 180, 180, 1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 0.625em;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right p.muted_text {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .OurClasses .OurClasses_right p.muted_text:hover {
+    color: rgba(180, 180, 180, 1);
+  }
+}
+.OurClasses .OurClasses_right h4 {
+  margin: 0;
+  /*border-bottom: solid 2px rgb(114, 222, 203);*/
+  text-decoration: underline;
+  text-decoration-color: rgb(114, 222, 203);
+  padding: 0;
+  line-height: 1.6rem;
+  font-weight: bold;
+}
+
+.OurClasses .OurClasses_right h4 a {
+  text-decoration-color: rgb(114, 222, 203);
+}
+
+.OurClasses .OurClasses_right p {
+  margin: 0 0 10px 0;
+  line-height: 1.6rem;
+}
+
+.OurClasses .OurClasses_right .content-item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 30px 0;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right .content-item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+}
+.OurClasses .OurClasses_right .content-item:not(:last-child) {
+  border-bottom: solid 1px rgb(242, 242, 242);
+}
+.OurClasses .OurClasses_right .content-item .icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right .content-item .icon-holder {
+    margin-right: 0;
+  }
+}
+.OurClasses .OurClasses_right .content-item i {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.OurClasses .OurClasses_right .content-item .content-item-text-holder {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .OurClasses .OurClasses_right .content-item .content-item-text-holder {
+    text-align: center;
+  }
+}
+.OurClasses .OurClasses_right .content-item .content-item-text-holder h4 {
+  /*border-bottom: solid 2px rgb(114, 222, 203);*/
+  text-decoration: underline;
+  text-decoration-color: rgb(114, 222, 203);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.OurClasses .OurClasses_right .content-item .content-item-text-holder p {
+  line-height: 1.6rem;
+}

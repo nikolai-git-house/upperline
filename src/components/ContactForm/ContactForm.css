@@ -1,0 +1,115 @@
+.ContactForm {
+  height: 100%;
+  width: 100%;
+}
+.ContactForm .navButton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModal__Content {
+  margin-top: 20%;
+  min-height: 400px;
+  height: fit-content;
+  margin-bottom: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: fixed !important;
+}
+@media (max-width: 968px) {
+  .ReactModal__Content {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+  }
+}
+.ReactModal__Content .close-button {
+}
+
+.ReactModal__Content h3 {
+  text-align: center;
+}
+
+.ContactForm-form {
+  width: 80%;
+  margin-left: 10%;
+  background: white;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: grid;
+  grid-gap: 2%;
+  grid-column-gap: 2%;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+.ContactForm-form .big_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactForm-form textarea {
+  grid-column: span 2;
+  padding: 2%;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+}
+.ContactForm-form input {
+  grid-column: span 2;
+  padding: 2%;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+}
+.ContactForm-form select {
+  grid-column: span 2;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+  color: rgb(120, 120, 120);
+  border: 1px rgb(220, 220, 220) solid;
+}
+
+.ContactForm-form select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.ContactForm-form select option {
+  color: rgb(180, 180, 180);
+  padding: 5%;
+}
+.ContactForm-form .half {
+  grid-column: span 1;
+  padding: 4%;
+}
+
+.ContactForm-form .button_box {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  min-height: 40px;
+  min-width: 150px;
+  padding: 0;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.ContactForm-form .button_box .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  min-height: 40px;
+  max-height: 50px;
+  min-width: 150px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  padding: 0;
+}

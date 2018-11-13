@@ -1,0 +1,127 @@
+.InstructorsCarousel {
+  min-height: 300px;
+  margin-bottom: 80px;
+}
+
+.InstructorsCarousel .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InstructorsCarousel .content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.InstructorsCarousel .title {
+  margin-bottom: 40px;
+}
+@media (max-width: 968px) {
+  .InstructorsCarousel .title {
+    margin-top: 20px;
+  }
+}
+.InstructorsCarousel .content .instructors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+@media (max-width: 968px) {
+  .InstructorsCarousel .content .instructors-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .InstructorsCarousel .content .instructors-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .InstructorsCarousel .content .instructors-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 411px) {
+  .InstructorsCarousel .content .instructors-container {
+    grid-template-columns: 1fr;
+  }
+}
+.InstructorsCarousel .content .instructors-container .inst {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 968px) {
+  .InstructorsCarousel .content .instructors-container .inst {
+    margin: 20px 0;
+  }
+}
+.InstructorsCarousel .content .instructors-container .inst .inst-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.InstructorsCarousel .content .instructors-container .inst .inst-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.InstructorsCarousel .content .instructors-container .inst p {
+  text-align: center;
+  padding: 0 12%;
+  line-height: 1.4em;
+}
+
+.InstructorsCarousel .carousel-button-holder {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  align-items: center;
+  position: absolute;
+  right: 9%;
+}
+
+.InstructorsCarousel .carousel-button-holder .left-arrow {
+  background: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.InstructorsCarousel .carousel-button-holder .left-arrow div {
+  -webkit-transform: rotateZ(315deg);
+  transform: rotateZ(315deg);
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  width: 7px;
+  height: 7px;
+  margin-right: -1px;
+}
+
+.InstructorsCarousel .carousel-button-holder .right-arrow {
+  background: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.InstructorsCarousel .carousel-button-holder .right-arrow div {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  width: 7px;
+  height: 7px;
+  margin-left: -3.5px;
+}

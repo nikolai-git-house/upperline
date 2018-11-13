@@ -1,0 +1,117 @@
+.DownloadForm {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+.DownloadForm .navButton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DownloadForm .modal {
+  margin-top: 60px;
+  border: none;
+  background: none;
+  padding: 20%;
+}
+.DownloadForm .modal:focus {
+  outline: none;
+  box-shadow: none;
+}
+.DownloadForm .ReactModal__Content .close-button {
+  position: absolute;
+  right: 2%;
+  top: 20px;
+  width: 2%;
+}
+
+.DownloadForm-form {
+  width: 80%;
+  margin-left: 10%;
+  background: white;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: grid;
+  grid-gap: 2%;
+  grid-column-gap: 2%;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.DownloadForm-form .big_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DownloadForm-form input {
+  grid-column: span 2;
+  padding: 2%;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+}
+.DownloadForm-form select {
+  grid-column: span 2;
+  border-radius: 3px;
+  background: rgba(242, 242, 242, 0.6);
+  text-align: top;
+  color: rgb(120, 120, 120);
+  border: 1px rgb(220, 220, 220) solid;
+}
+
+.DownloadForm-form select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.DownloadForm-form select option {
+  color: rgb(180, 180, 180);
+  padding: 5%;
+}
+.DownloadForm-form .half {
+  grid-column: span 1;
+  padding: 4%;
+}
+
+.DownloadForm-form .button_box {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  min-height: 40px;
+  min-width: 150px;
+  padding: 0;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.DownloadForm-form .button_box .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  min-height: 40px;
+  max-height: 50px;
+  min-width: 150px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  padding: 0;
+}
+
+.DownloadForm .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  /* font-size: 10px; */
+  /* width:200px; */
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}

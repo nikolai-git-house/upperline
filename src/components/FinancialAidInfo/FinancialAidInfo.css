@@ -1,0 +1,127 @@
+.FinancialAid {
+  background: white;
+  width: 100%;
+  min-height: 520px;
+  padding-bottom: 20px;
+  /*padding: 4.5% 6%;*/
+  /* padding:0 0 20% 0; */
+}
+
+.FinancialAid .content {
+  width: 66%;
+  margin-left: 17%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 640px) {
+  .FinancialAid .content {
+    width: 66%;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.FinancialAid .little-red-thing {
+  left: 17%;
+}
+.FinancialAid .FinancialAid-left {
+  /*border: solid 1px black;*/
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-left: 0;
+  width: 100%;
+  padding-right: 15%;
+}
+@media (max-width: 640px) {
+  .FinancialAid .FinancialAid-left {
+    padding-right: 0;
+  }
+}
+.FinancialAid .FinancialAid-left p {
+  font-family: Montserrat;
+  margin-top: 5%;
+  line-height: 1.5em;
+}
+.FinancialAid .FinancialAid-left h3 {
+  margin-top: 0;
+  padding-top: 60px;
+  line-height: 1.6em;
+}
+.FinancialAid .FinancialAid-right {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  margin-top: -5%;
+  padding-top: 60px;
+  padding-left: 5%;
+  width: 100%;
+}
+
+.FinancialAid .FinancialAid-right .right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.FinancialAid .FinancialAid-right .right-content div:not(:last-child) {
+  padding-bottom: 50px;
+  border-bottom: 1px rgba(242, 242, 242, 1) solid;
+}
+
+.FinancialAid .FinancialAid-right p {
+  line-height: 1.5rem;
+}
+
+.FinancialAid .FinancialAid-right .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 45px;
+  font-size: 11px;
+  width: 160px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+}
+
+.FinancialAid .FinancialAid-left .images {
+  height: 35px;
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FinancialAid .FinancialAid-left img {
+  width: 100%;
+}
+
+.FinancialAid #google_logo {
+  width: 65px;
+  padding-left: 10px;
+}
+
+.FinancialAid #nyu_logo {
+  width: 140px;
+}
+
+.FinancialAid .FinancialAid-right h4 {
+  text-decoration: underline;
+  text-decoration-color: rgb(125, 226, 209);
+  font-size: 1em;
+}
+
+/*@media screen only (min-width: 400 & max-width: 700) {
+  .BusinessHeroForm {
+    width: 100px;
+  }
+}
+
+@media screen only (min-width: 700 & max-width: 900) {
+
+}*/

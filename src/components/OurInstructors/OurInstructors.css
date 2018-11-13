@@ -1,0 +1,78 @@
+.OurInstructors .option-content-holder {
+}
+.OurInstructors .OurInstructors_content {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+  margin: 0 8%;
+  background: white;
+}
+
+.OurInstructors .OurInstructors_title {
+  margin-left: 9%;
+}
+.OurInstructors .OurInstructors_right {
+  height: 100%;
+  padding: 50px 5% 0 5%;
+}
+.OurInstructors .OurInstructors_right .option-holder {
+  display: grid;
+}
+
+.OurInstructors .OurInstructors_right .option:not(:first-child) {
+  border-left: solid 1px rgba(242, 242, 242, 1);
+}
+.OurInstructors .OurInstructors_right p.muted_text {
+  margin-top: 0;
+  font-family: Arvo;
+  color: rgba(100, 100, 100, 1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+.OurInstructors .OurInstructors_right h4 {
+  margin: 0;
+  /*border-bottom: solid 2px rgb(114, 222, 203);*/
+  text-decoration: underline;
+  text-decoration-color: rgb(114, 222, 203);
+  padding: 0;
+  line-height: 1.6rem;
+  font-weight: bold;
+}
+
+.OurInstructors .OurInstructors_right p {
+  margin: 0 0 10px 0;
+  line-height: 1.6rem;
+  font-size: 0.8em;
+}
+.OurInstructors .OurInstructors_right .instructor {
+  padding: 10px 5%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+@media (max-width: 600px) {
+  .OurInstructors .OurInstructors_right .instructor {
+    grid-template-columns: 1fr;
+  }
+}
+.OurInstructors .OurInstructors_right .instructor div {
+  padding-left: 30px;
+}
+@media (max-width: 600px) {
+  .OurInstructors .OurInstructors_right .instructor div {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.OurInstructors .OurInstructors_right .instructor img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

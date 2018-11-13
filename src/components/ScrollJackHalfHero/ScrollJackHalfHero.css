@@ -1,0 +1,169 @@
+.ScrollJack {
+  width: 100%;
+  min-height: 700px;
+}
+@media (max-width: 767px) {
+  .ScrollJack {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 584px) {
+  .ScrollJack {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 411px) {
+  .ScrollJack {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 369px) {
+  .ScrollJack {
+    margin-bottom: 250px;
+  }
+}
+.ScrollJack .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .ScrollJack .content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    height: 100%;
+    position: relative;
+    top: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .ScrollJack .content {
+    background: white !important;
+  }
+  .ScrollJack .content .image {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .ScrollJack .content .image {
+    display: none;
+  }
+}
+.ScrollJack .HalfHero-text {
+  /*margin-top: -30px;*/
+  padding: 80px 35% 0 15%;
+  height: 100%;
+  min-height: 700px;
+}
+@media (max-width: 767px) {
+  .ScrollJack .HalfHero-text {
+    /*margin-top: -30px;*/
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
+  }
+}
+.ScrollJack .little-red-thing {
+  position: absolute;
+  left: 57%;
+}
+@media (max-width: 767px) {
+  .ScrollJack .little-red-thing {
+    position: absolute;
+    left: 9%;
+  }
+}
+.ScrollJack .HalfHero-text p {
+  line-height: 1.4rem;
+}
+
+.ScrollJack .HalfHero-text .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  padding: 8px 20px;
+  margin: 5% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55spx;
+  font-size: 12px;
+  font-weight: bold;
+  width: 180px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.ScrollJack .HalfHero-text ul li span {
+  font-size: 15px;
+  color: black;
+}
+.ScrollJack .HalfHero-text ul li {
+  color: rgb(2, 160, 134);
+  height: 30px;
+  font-size: 15px;
+}
+
+.ScrollJack .HalfHero-text ul {
+  color: rgb(2, 160, 134);
+  padding: 0 4%;
+  margin-bottom: 8%;
+}
+
+.ScrollJack .HalfHero-text h4 {
+  margin: 4% 0;
+}
+@media (max-width: 767px) {
+  .ScrollJack .HalfHero-text h2 {
+    width: 80%;
+    margin-top: -160px;
+    color: black;
+  }
+}
+@media (min-width: 768px) {
+  .ScrollJack .HalfHero-text img {
+    display: none;
+  }
+}
+
+.ScrollJack .HalfHero-text p {
+  margin: 4% 0;
+  line-height: 1.8rem;
+}
+
+.ScrollJack .HalfHero-text ul {
+  margin: 20px 0;
+  line-height: 1.6rem;
+}
+
+.ScrollJack .scroll {
+  position: absolute;
+  right: 12%;
+  margin-top: 4%;
+  width: 150px;
+  text-align: right;
+  line-height: 1rem;
+}
+
+.ScrollJack .scroll-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4% 0;
+}
+.ScrollJack .scroll-text {
+  color: rgb(255, 113, 91);
+  font-size: 9px;
+  font-family: Arvo;
+  margin-right: 5%;
+}
+.ScrollJack .scroll-bar {
+  height: 2px;
+  display: inline-block;
+}

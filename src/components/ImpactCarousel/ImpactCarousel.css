@@ -1,0 +1,284 @@
+.ImpactCarousel {
+  min-height: 800px;
+  /*margin-bottom:2%;*/
+  /* margin-top:2px */
+}
+.ImpactCarousel .content {
+  display: grid;
+  grid-template-rows: 2fr 11fr;
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .content {
+    display: grid;
+    grid-template-rows: 2fr 15fr;
+  }
+  .ImpactCarousel .content .white-bg h2 {
+    position: absolute;
+    left: 17%;
+  }
+}
+.ImpactCarousel .pattern-bg {
+  padding-bottom: 80px;
+}
+/*title of carousel*/
+.ImpactCarousel h2 {
+  padding-left: 17%;
+  /*margin-top: 0;*/
+  margin: 0;
+  padding-top: 60px;
+}
+@media (max-width: 968px) {
+  .ImpactCarousel h2 {
+    padding-left: 0;
+  }
+}
+.ImpactCarousel .carousel-holder {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-template-rows: 2fr 4fr;
+  width: 78%;
+  /* height: 52%; */
+  /* min-height:395px; */
+  margin-left: 11%;
+  /*margin-top: -5%;*/
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .carousel-holder {
+    width: 90%;
+    margin-left: 5%;
+    /* height: 52%; */
+    /* min-height:395px; */
+    /*margin-top: -5%;*/
+  }
+}
+/*all carousel content*/
+.ImpactCarousel .carousel-holder .carousel-img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /*background: green;*/
+  margin-top: -80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height:100%; */
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .carousel-holder .carousel-img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-size: contain;
+    margin-top: -50px;
+  }
+}
+.ImpactCarousel .carousel-holder .carousel-buttons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 8px;
+  /*background: blue;*/
+  letter-spacing: 1px;
+  margin-top: -90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /*width: 30%;*/
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .carousel-holder .carousel-buttons {
+    margin-top: -80px;
+  }
+}
+.ImpactCarousel .carousel-holder .carousel-buttons .carousel-button-holder {
+  display: grid;
+  grid-template-columns: 20px 60px 20px;
+  align-items: center;
+}
+
+.ImpactCarousel .carousel-holder .carousel-buttons .left-arrow {
+  background: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ImpactCarousel .carousel-holder .carousel-buttons .left-arrow div {
+  -webkit-transform: rotateZ(315deg);
+  transform: rotateZ(315deg);
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  width: 7px;
+  height: 7px;
+  margin-right: -1px;
+}
+
+.ImpactCarousel .carousel-holder .carousel-buttons .right-arrow {
+  background: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ImpactCarousel .carousel-holder .carousel-buttons .right-arrow div {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  width: 7px;
+  height: 7px;
+  margin-left: -3.5px;
+}
+
+.ImpactCarousel .carousel-holder .carousel-info {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: white;
+  margin-left: -55%;
+  margin-top: -20%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .carousel-holder .carousel-info {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 20%;
+    margin-left: 0;
+    height: auto;
+  }
+}
+@media (max-width: 640px) {
+  .ImpactCarousel .carousel-holder .carousel-info {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 480px) {
+  .ImpactCarousel .carousel-holder .carousel-info {
+    margin-top: 0;
+  }
+}
+@media (max-width: 388px) {
+  .ImpactCarousel .carousel-holder .carousel-info {
+    margin-top: -10%;
+  }
+}
+.ImpactCarousel .carousel-holder .carousel-info .carousel-info-content {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* align-items: flex-end; */
+}
+
+.ImpactCarousel
+  .carousel-holder
+  .carousel-info
+  .carousel-info-content
+  .muted-text {
+  color: rgba(150, 150, 150, 0.8);
+  text-transform: uppercase;
+  font-family: Arvo;
+  font-size: 0.7em;
+  letter-spacing: 0.9px;
+  word-spacing: 2px;
+}
+
+.ImpactCarousel .carousel-holder .carousel-info .carousel-info-content p {
+  line-height: 1.6rem;
+}
+.ImpactCarousel .carousel-holder .carousel-info .carousel-info-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /*height: 100%;*/
+}
+.ImpactCarousel
+  .carousel-holder
+  .carousel-info
+  .carousel-info-button
+  .purple-box {
+  background: rgb(61, 52, 139);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImpactCarousel
+  .carousel-holder
+  .carousel-info
+  .carousel-info-button
+  .purple-box
+  div {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  width: 15px;
+  height: 15px;
+  margin-left: -7.5px;
+}
+
+.ImpactCarousel .impact-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 78%;
+  margin-left: 11%;
+  background: white;
+  /* margin-top: 8vh; */
+  margin-top: 80px;
+  padding: 60px 0;
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .impact-metrics {
+    grid-template-columns: auto;
+    padding: 20px 0;
+  }
+}
+.ImpactCarousel .metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 18%;
+}
+@media (max-width: 968px) {
+  .ImpactCarousel .metric {
+    padding: 5% 18%;
+  }
+}
+.ImpactCarousel .metric:not(:last-child) {
+  border-right: solid 2px rgba(182, 182, 182, 0.2);
+}
+.ImpactCarousel .metric .muted-text {
+  color: rgba(150, 150, 150, 1);
+  text-transform: uppercase;
+  font-family: Arvo;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ImpactCarousel .metric .metric-title {
+  text-transform: uppercase;
+  font-family: Arvo;
+  font-size: 4em;
+  margin: 0;
+  font-weight: normal;
+}

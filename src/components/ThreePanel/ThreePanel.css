@@ -1,0 +1,94 @@
+.ThreePanel {
+  background: white;
+  line-height: 1.2rem;
+  min-height: 800px;
+  padding-bottom: 3%;
+  position: relative;
+}
+.ThreePanel .TPcontent {
+  height: 100%;
+  display: grid;
+}
+@media (max-width: 968px) {
+  .ThreePanel .TPcontent {
+    grid-template-rows: 2fr 15fr;
+  }
+  .ThreePanel .TPcontent div h2 {
+    padding: 0;
+    padding-top: 60px;
+    position: absolute;
+    left: 17%;
+  }
+}
+@media (max-width: 640px) {
+  .ThreePanel .TPcontent {
+    grid-template-rows: 1fr 15fr;
+  }
+}
+.panel-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* height:120vh; */
+  /* min-height:554px; */
+}
+.panel .image {
+  height: calc(33vw);
+}
+.panel-holder .panel {
+  padding: 0 2px;
+}
+@media (max-width: 968px) {
+  .panel-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .panel-holder {
+    grid-template-columns: 1fr;
+  }
+  .panel-holder .panel {
+    padding: 0 20px;
+  }
+  .panel .image {
+    height: calc(80vw);
+  }
+}
+
+.ThreePanel .little-red-thing {
+  left: 8%;
+}
+
+.ThreePanel h2 {
+  margin: 0;
+  padding: 60px 0;
+  margin-left: 17%;
+}
+@media (max-width: 968px) {
+  .ThreePanel h2 {
+    margin-left: 0;
+  }
+}
+.ThreePanel .content {
+  padding: 2% 9%;
+}
+
+.ThreePanel h4 {
+  font-weight: bold;
+}
+
+.ThreePanel p {
+  margin-top: 0;
+  line-height: 1.8em;
+}
+
+.ThreePanel .location {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.ThreePanel .address {
+  font-size: 0.9em;
+}
+.ThreePanel i {
+  padding-right: 2%;
+}

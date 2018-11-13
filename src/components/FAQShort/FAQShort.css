@@ -1,0 +1,81 @@
+.FAQShort {
+  width: 100%;
+  min-height: 450px;
+}
+.FAQShort h2 {
+  margin-top: 0;
+  padding-top: 5%;
+}
+@media (max-width: 968px) {
+  .FAQShort h2 {
+    margin-top: 0;
+    padding-top: 15%;
+  }
+}
+.FAQShort .content {
+  height: 100%;
+  width: 74%;
+  margin-left: 15%;
+  padding-bottom: 1%;
+}
+
+.FAQShort .faq-item-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin-top: 1%; */
+}
+@media (max-width: 968px) {
+  .FAQShort .faq-item-holder {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* margin-top: 1%; */
+  }
+}
+.FAQShort .faq-item:not(:first-child) {
+  padding-left: 10%;
+}
+@media (max-width: 968px) {
+  .FAQShort .faq-item:not(:first-child) {
+    padding-left: 0;
+  }
+}
+.FAQShort .faq-item:not(:last-child) {
+  border-right: solid 2px rgba(182, 182, 182, 0.2);
+  padding-right: 10%;
+}
+@media (max-width: 968px) {
+  .FAQShort .faq-item:not(:last-child) {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+.FAQShort .faq-answer {
+  line-height: 1.6rem;
+}
+
+.FAQShort .button {
+  background: rgba(53, 46, 128, 1);
+  color: white;
+  padding: 10px 20px;
+  margin: 40px 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 12px;
+  width: 140px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.FAQShort .button-holder {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 968px) {
+  .FAQShort .button-holder {
+    justify-content: flex-start;
+  }
+}

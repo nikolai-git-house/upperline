@@ -1,0 +1,85 @@
+.ADay {
+  min-height: 800px;
+  /* padding-top: 60px; */
+}
+
+.ADay .content .title {
+  text-align: center;
+}
+
+.ADay .content .title h3 {
+  padding-top: 0;
+}
+
+.ADay .content .title {
+  padding-bottom: 10px;
+}
+.ADay .content {
+  /* width: 65.5%; */
+  /* margin-left:24%; */
+  margin-right: 10%;
+  height: 100%;
+}
+
+.ADay .content .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.ADay .content .images div img {
+  width: 100%;
+  /* padding: 50px 0; */
+}
+
+.ADay .content .images div {
+  margin-right: 10%;
+}
+
+.ADay .content .schedule {
+  display: grid;
+  grid-template-columns: 25fr 65fr;
+  margin-right: 3%;
+}
+
+@media (max-width: 1023px) {
+  .ADay .content .schedule {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .ADay .content .schedule_mobile {
+    display: none;
+  }
+}
+.ADay .content .schedule div {
+  display: flex;
+  flex-direction: column;
+}
+.ADay .content .schedule_mobile div {
+  display: flex;
+  flex-direction: column;
+}
+.ADay .content .schedule .times div p {
+  font-weight: bold;
+}
+
+.ADay .content .schedule div div {
+  padding: 20px 0;
+}
+.ADay .content .schedule div div:not(:last-child) {
+  border-bottom: 2px rgba(242, 242, 242, 1) solid;
+}
+
+.ADay .content .schedule_mobile div div {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.ADay .content .schedule_mobile div div:not(:last-child) {
+  border-bottom: 2px rgba(242, 242, 242, 1) solid;
+}
+/* .ADay .content .images div:not(:first-child){
+  padding-left:3%
+} */

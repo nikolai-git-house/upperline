@@ -1,0 +1,127 @@
+.Nonprofits .Hero {
+  /*min-height: 130vh;*/
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 75px;
+}
+
+.Nonprofits .Hero-white_bg {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.Nonprofits .Hero-pattern_bg_big {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.Nonprofits .Hero-noah {
+  width: 50%;
+  height: 800px;
+  position: relative;
+  top: -375px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+@media (max-width: 768px) {
+  .Nonprofits .Hero-noah {
+    width: 100%;
+  }
+}
+
+.Nonprofits .Hero .white-div {
+  background-color: white;
+  height: 375px;
+}
+@media (max-width: 1280px) {
+  .Nonprofits .Hero .white-div {
+    background-color: white;
+    height: 250px;
+  }
+}
+.Nonprofits .Hero-pattern_bg_small {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.Nonprofits .Hero-cta {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  position: absolute;
+  top: 276px;
+  left: 40%;
+  color: black;
+}
+@media (max-width: 1280px) {
+  .Nonprofits .Hero-cta {
+    top: 156px;
+  }
+}
+@media (max-width: 768px) {
+  .Nonprofits .Hero-cta {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 183px;
+    left: 21%;
+    text-align: center;
+    color: white;
+    text-decoration: underline rgb(125, 226, 209);
+  }
+}
+.Nonprofits .Hero-cta_underline {
+  font-size: 12px;
+  font-family: Arvo;
+  border-bottom: solid 3px rgb(141, 203, 188);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: black;
+  margin-left: 3px;
+}
+@media (max-width: 768px) {
+  .Nonprofits .Hero-cta_underline {
+    color: white;
+  }
+}
+.Nonprofits .Hero-cta_jumbo_text h2 {
+  font-family: Montserrat;
+  font-weight: 600;
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+@media (max-width: 768px) {
+  .Nonprofits .Hero-cta_jumbo_text h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 700px) {
+  .Nonprofits .Hero-cta_jumbo_text h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .Nonprofits .Hero-cta_jumbo_text h2 {
+    font-size: 33px;
+  }
+}
+
+.Nonprofits .Hero-cta_jumbo_text h2 mark {
+  color: black;
+  background-color: rgba(193, 223, 240, 1);
+}

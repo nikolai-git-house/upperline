@@ -1,0 +1,174 @@
+.TeachWithUs .content {
+  width: 84%;
+  margin-left: 8%;
+}
+@media (max-width: 600px) {
+  .TeachWithUs .content {
+    text-align: center;
+  }
+}
+.TeachWithUs .content .job div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.TeachWithUs .content .button {
+  background: rgba(53, 46, 128, 1);
+  color: white;
+  padding: 10px 20px;
+  margin: 40px 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 12px;
+  width: 140px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.TeachWithUs .content .job span {
+  font-weight: bold;
+  /* font-family:Arvo; */
+  /* color:rgb(180,180,180); */
+  line-height: 1.6em;
+  text-decoration: underline;
+  /*mint green underline*/
+  text-decoration-color: rgb(125, 226, 209);
+}
+
+.TeachWithUs {
+  margin-bottom: 60px;
+}
+
+.TeachWithUs .content {
+  margin: 0 8%;
+  width: 84%;
+  /* height: 150vh; */
+  /*margin-bottom: 30vh;*/
+  background: white;
+}
+
+.TeachWithUs .little-red-thing {
+  left: 15%;
+}
+
+.TeachWithUs .job-container {
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px rgba(242, 242, 242, 1);
+}
+
+.TeachWithUs .job {
+  display: grid;
+  grid-template-columns: 3fr 11fr 4fr;
+  padding: 20px 0;
+  min-height: 200px;
+  border-bottom: solid 1px rgba(242, 242, 242, 1);
+}
+@media (max-width: 600px) {
+  .TeachWithUs .job {
+    display: grid;
+    grid-template-columns: 3fr;
+    border-bottom: solid 1px rgba(242, 242, 242, 1);
+  }
+}
+.TeachWithUs p {
+  margin: 0;
+}
+.TeachWithUs h4 {
+  margin: 0;
+}
+
+.TeachWithUs .icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  font-size: 40px;
+}
+
+.TeachWithUs .job .icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TeachWithUs .job .description {
+  line-height: 1.4rem;
+  padding-top: 4%;
+  font-size: 0.85em;
+}
+.TeachWithUs .job-content span {
+  font-size: 1em;
+  border-bottom: 2px solid rgb(125, 226, 209);
+  font-weight: bold;
+}
+
+.TeachWithUs .job-content .muted_text {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(150, 150, 150, 1);
+  margin-bottom: 10px;
+}
+
+.TeachWithUs .job-content {
+  padding-right: 8%;
+  padding-left: 5%;
+}
+@media (max-width: 600px) {
+  .TeachWithUs .job-content {
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.TeachWithUs .job-info {
+  display: flex;
+  color: rgb(100, 100, 100);
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 11%;
+  border-left: 1px rgba(242, 242, 242, 1) solid;
+}
+@media (max-width: 600px) {
+  .TeachWithUs .job-info {
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
+  }
+}
+.TeachWithUs .job-info p {
+  font-size: 0.7em;
+  font-family: Arvo;
+  padding: 2% 0;
+}
+
+.TeachWithUs .job-info i {
+  font-size: 0.7em;
+  padding: 0 5px 0 0;
+}
+
+.TeachWithUs .job-info p:not(:last-child) {
+  border-bottom: 1px rgba(200, 200, 200, 1) solid;
+}
+
+.TeachWithUs .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 10px;
+  width: 150px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}

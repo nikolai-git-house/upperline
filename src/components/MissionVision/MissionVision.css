@@ -1,0 +1,48 @@
+.MissionVision .content {
+  /* display:grid;
+  grid-template-columns: 1fr 3fr; */
+  width: 100%;
+  background: white;
+  padding-bottom: 70px;
+}
+
+.MissionVision .content .left {
+  margin-left: 35%;
+}
+
+.MissionVision .left .title h2 {
+  margin: 0;
+  padding-top: 70px;
+}
+
+.MissionVision .center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 600px) {
+  .MissionVision .center {
+    grid-template-columns: 1fr;
+  }
+}
+.MissionVision .center p {
+  margin: 0 0 10px 0;
+  line-height: 1.6rem;
+}
+
+.MissionVision .center .right-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 12%;
+  text-align: center;
+}
+
+.MissionVision .center .right-item .icon-holder {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background: rgba(234, 186, 107, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

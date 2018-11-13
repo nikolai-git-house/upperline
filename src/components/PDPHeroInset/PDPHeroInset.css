@@ -1,0 +1,104 @@
+.PDPHeroInset .content {
+  display: grid;
+  grid-template-columns: 12fr 4fr;
+  padding: 20px 3% 0 3%;
+  width: 75.5%;
+  background: white;
+  margin-bottom: 5px;
+  line-height: 2rem;
+}
+@media (max-width: 968px) {
+  .PDPHeroInset .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+    background: white;
+    margin-bottom: 25px;
+    line-height: 2rem;
+  }
+}
+.PDPHeroInset .content .muted_text {
+  /* font-size: 1em; */
+  color: rgba(180, 180, 180, 1);
+}
+.PDPHeroInset .description {
+  /* padding-top:2%; */
+  line-height: 1.6rem;
+}
+
+.PDPHeroInset p {
+  padding: 0;
+  margin: 0;
+}
+
+.PDPHeroInset .course-content {
+  /* height:160px; */
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 968px) {
+  .PDPHeroInset .course-content {
+    align-items: center;
+  }
+}
+.PDPHeroInset .course-info {
+  padding: 0 0 0 30px;
+  font-family: Arvo;
+  border-left: solid 1px rgba(242, 242, 242, 1);
+  height: 280px;
+  /* height: 160px; */
+}
+@media (max-width: 968px) {
+  .PDPHeroInset .course-info {
+    padding: 0;
+    font-family: Arvo;
+    border-left: none;
+    /* height: 160px; */
+  }
+}
+.PDPHeroInset .course-info .listItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 260px;
+  /* align-items: center; */
+  /* grid-template-rows: 1fr 1fr 1fr 2fr; */
+  /* margin-top: 10px; */
+  /* height:160px; */
+}
+.PDPHeroInset .course-info .listItems p {
+  border-bottom: 1px solid rgba(242, 242, 242, 1);
+  display: flex;
+  /* padding: 12px 0; */
+  align-items: center;
+}
+
+.PDPHeroInset .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  /* font-weight: bold; */
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  font-size: 0.72em;
+  /* font-weight:bold; */
+  font-family: Montserrat;
+  text-decoration: none;
+}
+.PDPHeroInset i {
+  margin-right: 10px;
+}
+
+.PDPHeroInset .white-bg {
+  height: 40px;
+  background: white;
+}

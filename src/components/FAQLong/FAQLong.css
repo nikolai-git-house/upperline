@@ -1,0 +1,80 @@
+.FAQLong {
+  width: 100%;
+  min-height: 380px;
+  display: grid;
+  grid-template-rows: 1fr;
+  /* padding-bottom: 20px; */
+}
+
+.FAQLong .title {
+  text-align: center;
+  /* padding-top:50px; */
+  padding-bottom: 40px;
+  /* border-top: 5px solid rgba(242,242,242,1) */
+}
+
+.FAQLong .title h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.FAQLong .content {
+  height: 100%;
+  /* width:66%; */
+  /* margin-left:24%; */
+  padding-bottom: 1%;
+  display: grid;
+}
+
+.FAQLong .content .faq-item-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin-top: 1%; */
+}
+@media (max-width: 968px) {
+  .FAQLong .content .faq-item-holder {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1%; */
+  }
+}
+.FAQLong .content .faq-item {
+  line-height: 1.5rem;
+}
+
+.FAQLong .content .faq-item {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.FAQLong .content .faq-item:nth-child(2n) {
+  border-left: 1px solid rgb(200, 200, 200);
+  padding-right: 0;
+}
+@media (max-width: 968px) {
+  .FAQLong .content .faq-item:nth-child(2n) {
+    border-left: none;
+    padding-right: 0;
+  }
+}
+.FAQLong .button {
+  background: rgba(53, 46, 128, 1);
+  color: white;
+  padding: 3% 5%;
+  margin: 3% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 0.8em;
+  width: 180px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+.FAQLong .button-holder {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}

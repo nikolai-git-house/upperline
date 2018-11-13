@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  /* text-decoration:underline;
+  /*mint green underline*/
+  /* text-decoration-color:rgb(125,226,209); */
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+}
+input,
+textarea {
+  border-style: solid;
+  border: 1px solid rgba(159, 159, 159, 0.2);
+  color: black;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(130, 130, 130, 0.8);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  /*color: red;*/
+}
+
+.red-bg {
+  background: rgba(248, 49, 59, 1);
+}
+
+.red-muted-bg {
+  background: rgba(251, 166, 170, 1);
+}
+.orange-bg {
+  background: rgb(255, 101, 81);
+}
+.green-bg {
+  background: rgb(3, 149, 123);
+}
+
+.green-text {
+  color: rgb(3, 147, 121);
+}
+
+.green-muted-bg {
+  /*background: rgb(3, 149, 123);*/
+}
+
+.green-dark-bg {
+  /*background: rgb(3, 149, 123);*/
+}
+
+.green-highlight-bg {
+  background: rgb(114, 222, 203);
+}
+
+.highlight-text {
+  color: rgb(125, 226, 209);
+}
+
+.purple-bg {
+  background: rgb(61, 52, 139);
+  color: white;
+}
+.little-red-thing {
+  background: rgb(255, 113, 91);
+  width: 58px;
+  height: 13px;
+  position: absolute;
+}
+
+p {
+  font-size: 1em;
+  /* line-height:1.125em; */
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+.muted_text {
+  font-size: 0.625em;
+  font-family: Arvo;
+  color: rgba(200, 200, 200, 1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.pattern_bg {
+  background: url("images/uc_pattern_linedot.png");
+  background-size: 16px;
+}
+
+.yellow_triangles {
+  background: url("images/uc_pattern_triangles_yellow.png");
+  background-size: 28px;
+  background-position: right top;
+}
+
+.yellow_tiles {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("images/uc_pattern_tiles_yellow.png");
+  background-size: 32px;
+}
+
+.pink_donuts {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    url("images/uc_pattern_donut.png");
+  background-size: 32px;
+}
+
+.blue_dots {
+  background: url("images/uc_pattern_dots.png");
+  background-size: 12px;
+}
+
+.green_u {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0.45)
+    ),
+    url("images/uc_pattern_u1.png");
+  background-size: 24px;
+  background-position: right top;
+}
+
+.pdp_detail {
+  width: 75.5%;
+  margin-left: 12%;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  border-top: 4px solid rgba(242, 242, 242, 1);
+}

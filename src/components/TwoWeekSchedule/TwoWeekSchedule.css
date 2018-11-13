@@ -1,0 +1,89 @@
+.TwoWeekSchedule {
+  min-height: 490px;
+}
+
+.TwoWeekSchedule .title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.TwoWeekSchedule .schedule {
+  display: grid;
+}
+
+.TwoWeekSchedule .schedule div.weekdays,
+div.week1,
+div.week2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.TwoWeekSchedule .schedule div.weekdays {
+  text-transform: uppercase;
+  font-family: Arvo;
+  color: rgba(180, 180, 180, 1);
+  border-bottom: 1px rgba(242, 242, 242, 1) solid;
+}
+.TwoWeekSchedule .schedule div.weekdays div:not(:last-child) {
+  border-right: 1px rgba(242, 242, 242, 1) solid;
+}
+
+.TwoWeekSchedule .schedule div.weekdays .outer div {
+  justify-content: center;
+  padding: 20px 0;
+  height: 100%;
+}
+
+.TwoWeekSchedule .schedule .outer {
+  height: 100%;
+  overflow: hidden;
+}
+
+.TwoWeekSchedule .outer div {
+  margin: 3px;
+  padding: 20px 20px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 92%;
+  overflow: hidden;
+}
+
+.TwoWeekSchedule .schedule div.week1 div:not(:last-child),
+.TwoWeekSchedule .schedule div.week2 div:not(:last-child) {
+  border-right: 1px rgba(242, 242, 242, 1) solid;
+}
+@media (max-width: 768px) {
+  .TwoWeekSchedule .outer div {
+    font-size: 10px;
+    padding: 10px 10px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 92%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 540px) {
+  .TwoWeekSchedule .outer div {
+    font-size: 8px;
+    padding: 5px 5px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 92%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 388px) {
+  .TwoWeekSchedule .outer div {
+    font-size: 9px;
+    padding: 0;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 92%;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,40 @@
+.dropdownDrawer {
+  background: white;
+  box-shadow: 2px 0px 7px rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 90px;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-out;
+}
+.dropdownDrawer.open {
+  transform: translateY(0);
+}
+.dropdownDrawer ul {
+  text-align: center;
+}
+ul li {
+  height: 50px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ul li a:hover {
+  color: rgb(125, 226, 209);
+}
+@media (max-width: 630px) {
+  ul li {
+    height: 40px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .dropdownDrawer {
+    display: none;
+  }
+}

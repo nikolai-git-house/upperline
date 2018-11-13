@@ -1,0 +1,92 @@
+.SplitInfo {
+  background: white;
+  width: 100%;
+  min-height: 400px;
+  /*padding: 4.5% 6%;*/
+  /* padding:0 0 20% 0; */
+  line-height: 1.2rem;
+  margin-bottom: 60px;
+}
+
+.SplitInfo .content {
+  width: 66%;
+  margin-left: 17%;
+}
+.SplitInfo .little-red-thing {
+  left: 17%;
+}
+.SplitInfo-left {
+  /*border: solid 1px black;*/
+  margin-left: 0;
+  width: 100%;
+}
+.SplitInfo-left p {
+  margin-top: 30px;
+  line-height: 1.6em;
+  margin-bottom: 30px;
+}
+
+.SplitInfo-right p {
+  margin-top: 20px;
+  line-height: 1.6em;
+  margin-bottom: 12px;
+}
+
+.SplitInfo-left h2 {
+  margin-top: 0;
+  padding-top: 40px;
+  line-height: 3rem;
+}
+.SplitInfo-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.SplitInfo-right .button {
+  background: rgba(61, 52, 139, 1);
+  color: white;
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 40px;
+  font-size: 10px;
+  width: 140px;
+  border-radius: 0;
+  letter-spacing: 0.8px;
+}
+
+.SplitInfo-left .images {
+  height: 35px;
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SplitInfo-left img {
+  width: 100%;
+}
+
+#google_logo {
+  width: 120px;
+  padding-left: 30px;
+  height: 50px;
+}
+
+#nyu_logo {
+  width: 160px;
+  height: 50px;
+}
+
+/*@media screen only (min-width: 400 & max-width: 700) {
+  .BusinessHeroForm {
+    width: 100px;
+  }
+}
+
+@media screen only (min-width: 700 & max-width: 900) {
+
+}*/

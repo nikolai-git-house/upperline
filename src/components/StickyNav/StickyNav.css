@@ -1,0 +1,59 @@
+.StickyNav {
+  left: 8.4%;
+  /* top: 40px; */
+  width: 11.5%;
+}
+
+.StickyNav.stuck {
+  position: fixed;
+  top: 40px;
+
+}
+
+.StickyNav.unstuck {
+  position: relative;
+  height: 0;
+  overflow: visible;
+  top: 40px;
+}
+
+.StickyNav.bottomStuck {
+  position: absolute;
+  overflow: visible;
+}
+
+.StickyNav .navItem {
+  font-size: .8em;
+  padding: 18px 0px;
+  border-top: 1px solid rgba(200, 200, 200, 1);
+}
+
+.StickyNav .navItem:first-child {
+  border-top: none;
+}
+
+.StickyNav .navItem a {
+  transition-duration: 0.25s;
+}
+
+.StickyNav .navItem.active a {
+  color: rgba(2, 160, 134);
+}
+
+.StickyNav .bold {
+  font-weight: bold;
+}
+
+.StickyNav .content > a .button {
+  background: rgba(61, 52, 139,1);
+  color: white;
+  grid-column-start:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-size: 0.9em;
+  width: 100%;
+  border-radius:0;
+  letter-spacing:0.8px;
+}
